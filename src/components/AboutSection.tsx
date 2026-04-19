@@ -27,7 +27,6 @@ const skillIcons: { [key: string]: React.ReactNode } = {
   "LLM": <Brain size={20} className="text-indigo-500" />,
   "Jira": <Wrench size={20} className="text-blue-700" />,
   "RAG": <Wrench size={20} className="text-purple-500" />,
-  "Data Analysis": <BarChart3 size={20} className="text-teal-600" />,
 };
 
 const skillCategories = [
@@ -101,33 +100,6 @@ const AboutSection = () => {
           <p className="text-muted-foreground leading-relaxed mb-14">
             Versatile engineer with hands-on experience in Software Development (Django, ReactJS, Node.js) and Data Engineering (PL/SQL and Python). I design scalable web applications, RESTful APIs, and interactive dashboards while building robust ETL workflows, optimizing queries, and ensuring data quality across distributed systems. Passionate about integrating software solutions with data pipelines to deliver end-to-end systems.
           </p>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="mb-6"
-        >
-          <h3 className="font-heading text-sm font-semibold text-foreground mb-4 uppercase tracking-wider">Skills & Technologies</h3>
-          <div className="flex flex-wrap gap-3">
-            {allSkills.map((skill, i) => (
-              <motion.div
-                key={skill.name}
-                initial={{ opacity: 0, scale: 0.8 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.3, delay: i * 0.05 }}
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 hover:border-primary/50 hover:bg-primary/20 transition-all group"
-              >
-                <span className="flex-shrink-0 text-primary group-hover:scale-110 transition-transform">
-                  {skillIcons[skill.name] || <Code2 size={16} />}
-                </span>
-                <span className="text-sm font-medium text-foreground">{skill.name}</span>
-              </motion.div>
-            ))}
-          </div>
         </motion.div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
