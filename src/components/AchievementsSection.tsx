@@ -193,36 +193,37 @@ const AchievementsSection = () => {
           className="mt-8"
         >
           <h4 className="text-xs font-heading font-semibold text-muted-foreground uppercase tracking-wider mb-3">Certification Badge</h4>
-          <div className="mx-auto w-full max-w-[540px] rounded-[30px] border border-white/10 bg-[#1f1f22] p-4 shadow-[0_14px_40px_rgba(0,0,0,0.28)]">
-            <div className="overflow-hidden rounded-[24px] bg-[#1d1d1f] px-4 pb-5 pt-4">
-              <div className="flex items-center justify-center gap-2 rounded-t-[18px] bg-[#221f1f] px-4 py-3 text-center text-2xl sm:text-4xl font-black tracking-tight text-[#f4f5f7]"
-                style={{ fontFamily: 'Segoe UI, sans-serif' }}
-              >
-                <span className="inline-flex items-center justify-center h-8 w-8 rounded-sm border border-white/10 bg-white/5 text-base">◫</span>
-                databricks
+
+          <div className="mx-auto w-full max-w-[540px] rounded-[30px] border border-white/10 bg-[#11181d] p-4 shadow-[0_18px_42px_rgba(0,0,0,0.35)]">
+            <div className="overflow-hidden rounded-[26px] bg-[#181c20] p-3 sm:p-4">
+              <div className="flex items-center justify-center rounded-[18px] bg-[#1d1f22] px-5 py-3 text-center text-2xl sm:text-4xl font-black tracking-tight text-white shadow-inner shadow-black/30">
+                <div className="mr-3 flex h-8 w-8 items-center justify-center rounded-[8px] border border-white/10 bg-white/5 text-[0.72rem] font-bold text-white/90">
+                  ◫
+                </div>
+                <span className="tracking-[-0.06em]">databricks</span>
               </div>
 
-              <div className="mt-3 rounded-[16px] bg-[#f69a7d] px-4 py-4 text-center text-[#1f1f20]">
-                <div className="text-2xl sm:text-4xl font-black tracking-[0.18em] uppercase">Certified</div>
-                <div className="mt-2 flex justify-center gap-1 text-lg sm:text-2xl text-[#f7e8b2]">
-                  <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              <div className="mt-3 rounded-[18px] bg-[#f39a7d] px-4 py-4 text-center shadow-[inset_0_0_0_1px_rgba(255,255,255,0.18)]">
+                <div className="text-2xl sm:text-4xl font-black uppercase tracking-[0.15em] text-[#15161a]">Certified</div>
+                <div className="mt-3 flex justify-center gap-2 text-lg sm:text-2xl text-[#f7e8ac]">
+                  <span>★</span>
+                  <span>★</span>
+                  <span>★</span>
+                  <span>★</span>
+                  <span>★</span>
                 </div>
               </div>
 
-              <div className="mt-4 text-center text-2xl sm:text-4xl font-black leading-tight text-[#f4f5f7]">
+              <div className="mt-5 text-center text-[2rem] sm:text-[3.2rem] font-black leading-[0.98] tracking-[-0.06em] text-white">
                 Data Engineer
                 <span className="block">Professional</span>
               </div>
 
-              <div className="relative mt-4 overflow-hidden rounded-b-[24px] border border-white/5 bg-[#1b2d39] px-4 py-5">
-                <div className="absolute inset-0 opacity-30" style={{ background: "linear-gradient(135deg, rgba(255,255,255,0.08), rgba(255,255,255,0))" }} />
-                <div className="absolute left-1/2 top-1/2 h-28 w-28 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#f59a6b] opacity-90" />
-                <div className="absolute left-1/2 top-1/2 h-16 w-16 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#2c4d5a] opacity-90" />
-                <div className="relative h-16 w-full">
-                  <div className="absolute inset-x-0 bottom-0 h-8 rounded-t-[18px] bg-[#2d6678] opacity-90" />
-                  <div className="absolute inset-x-0 bottom-0 h-8" style={{ background: "linear-gradient(180deg, transparent 0%, rgba(17,24,39,0.7) 100%)" }} />
-                  <div className="absolute inset-x-0 bottom-0 h-7" style={{ backgroundImage: "radial-gradient(circle at 12px 10px, rgba(17,24,39,0.7) 0 10px, transparent 11px)" }} />
-                </div>
+              <div className="relative mt-5 overflow-hidden rounded-[20px] border border-white/5 bg-[#173746] px-3 py-7 shadow-inner shadow-black/20">
+                <div className="absolute inset-x-0 bottom-0 h-14 bg-[#36a9c7] opacity-95" />
+                <div className="absolute left-1/2 top-1/2 h-28 w-28 -translate-x-1/2 -translate-y-1/2 rounded-full border-[16px] border-[#f39a7d] bg-transparent shadow-[0_0_0_10px_rgba(243,154,125,0.18)]" />
+                <div className="absolute inset-x-0 bottom-0 h-10 bg-[#1f4d5d] opacity-90" />
+                <div className="absolute inset-x-0 bottom-0 h-10 opacity-80" style={{ backgroundImage: 'radial-gradient(circle at 12px 10px, rgba(17,24,39,0.7) 0 10px, transparent 11px)' }} />
               </div>
             </div>
           </div>
