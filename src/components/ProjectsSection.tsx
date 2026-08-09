@@ -6,26 +6,41 @@ import classificationImg from "@/assets/project-Streamlit.jpg";
 
 const projects = [
   {
-    title: "E-commerce Website",
-    description: "Full-stack e-commerce platform with payment integration, user authentication, and interactive product dashboards. Built with Django backend and ReactJS frontend.",
-    image: portfolioImg,
-    github: "https://github.com/M-Dhinesh",
-    tags: ["Django", "React", "MongoDB", "Docker", "RazorPay", "Github Copilot"],
-  },
-  {
-    title: "Detection of Arrhythmia",
-    description: "Machine learning project for detecting cardiac arrhythmias using signal processing and classification algorithms with pandas and numpy.",
-    image: classificationImg,
-    github: "https://github.com/M-Dhinesh",
-    tags: ["Python", "Machine Learning", "Pandas", "NumPy", "Data Science"],
-  },
-  {
-    title: "Electricity Bill Management System",
-    description: "Enterprise-level billing system built with Java technologies for managing and tracking electricity consumption and billing operations.",
-    image: tourismImg,
-    github: "https://github.com/M-Dhinesh",
-    tags: ["Java", "JSP", "Derby", "Apache Tomcat", "Backend"],
-  },
+  title: "Classification Models with Streamlit",
+  description:
+    "Interactive Streamlit application for training and evaluating six classification algorithms on the Wine Quality dataset. Users can upload a CSV dataset, choose a model, and view performance metrics, a confusion matrix, and a classification report.",
+  image: classificationImg,
+  github: "https://github.com/M-Dhinesh/Classification_Models_with_Streamlit",
+  tags: [
+    "Python",
+    "Streamlit",
+    "Scikit-learn",
+    "XGBoost",
+    "Machine Learning",
+  ],
+},
+{
+  title: "MD Tourism",
+  description:
+    "Full-stack tourism management platform with a React interface and ASP.NET Core 6 REST APIs. It supports traveler and travel-agent accounts, JWT authentication, travel-package management, reservations with passenger details, feedback, and image uploads.",
+  image: tourismImg,
+  github: "https://github.com/M-Dhinesh/MD_Tourism",
+  tags: [
+    "React",
+    "ASP.NET Core",
+    "C#",
+    "SQL Server",
+    "Entity Framework Core",
+  ],
+},
+{
+  title: "Portfolio",
+  description:
+    "Responsive personal portfolio website built with React and TypeScript. It presents professional experience, education, achievements, projects, and contact links through animated, smooth-scrolling sections.",
+  image: portfolioImg,
+  github: "https://github.com/M-Dhinesh/Portfolio",
+  tags: ["React", "TypeScript", "Vite", "Tailwind CSS", "Framer Motion"],
+}
 ];
 
 const ProjectsSection = () => {
