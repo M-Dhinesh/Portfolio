@@ -1,14 +1,5 @@
 import { motion } from "framer-motion";
-import { Trophy, ExternalLink, Award, Code, Sparkles } from "lucide-react";
-
-const featuredPost = {
-  title: "Databricks Certified Data Engineer Professional",
-  url: "https://lnkd.in/p/grSTZrmy",
-  description:
-    "Shared my Databricks certification milestone and the learning journey behind becoming a certified data engineer in the cloud and analytics space.",
-  tag: "Featured LinkedIn Post",
-  tags: ["Databricks", "Data Engineering", "Certification"],
-};
+import { Trophy, ExternalLink, Award, Code } from "lucide-react";
 
 const platforms = [
   {
@@ -39,6 +30,7 @@ const platforms = [
       { name: "SQL", stars: 5 },
     ],
     certifications: [
+      { name: "Databricks Certified Data Engineer Professional", url: "https://lnkd.in/p/grSTZrmy" },
       { name: "Python (Basic)", url: "https://www.hackerrank.com/certificates/a14885c1e6a5" },
       { name: "Problem Solving (Basic)", url: "https://www.hackerrank.com/certificates/7bf1ad7e8c3c" },
       { name: "SQL (Basic)", url: "https://www.hackerrank.com/certificates/611a84a5a074" },
@@ -198,36 +190,41 @@ const AchievementsSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.15 }}
-          className="glass-card p-8 mt-8 hover-lift"
+          className="mt-8"
         >
-          <div className="flex items-center justify-between gap-4 mb-4">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
-                <Sparkles size={20} className="text-primary" />
+          <h4 className="text-xs font-heading font-semibold text-muted-foreground uppercase tracking-wider mb-3">Certification Badge</h4>
+          <div className="mx-auto w-full max-w-[540px] rounded-[30px] border border-white/10 bg-[#1f1f22] p-4 shadow-[0_14px_40px_rgba(0,0,0,0.28)]">
+            <div className="overflow-hidden rounded-[24px] bg-[#1d1d1f] px-4 pb-5 pt-4">
+              <div className="flex items-center justify-center gap-2 rounded-t-[18px] bg-[#221f1f] px-4 py-3 text-center text-2xl sm:text-4xl font-black tracking-tight text-[#f4f5f7]"
+                style={{ fontFamily: 'Segoe UI, sans-serif' }}
+              >
+                <span className="inline-flex items-center justify-center h-8 w-8 rounded-sm border border-white/10 bg-white/5 text-base">◫</span>
+                databricks
               </div>
-              <h3 className="font-heading text-xl font-semibold text-foreground">{featuredPost.title}</h3>
+
+              <div className="mt-3 rounded-[16px] bg-[#f69a7d] px-4 py-4 text-center text-[#1f1f20]">
+                <div className="text-2xl sm:text-4xl font-black tracking-[0.18em] uppercase">Certified</div>
+                <div className="mt-2 flex justify-center gap-1 text-lg sm:text-2xl text-[#f7e8b2]">
+                  <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+              </div>
+
+              <div className="mt-4 text-center text-2xl sm:text-4xl font-black leading-tight text-[#f4f5f7]">
+                Data Engineer
+                <span className="block">Professional</span>
+              </div>
+
+              <div className="relative mt-4 overflow-hidden rounded-b-[24px] border border-white/5 bg-[#1b2d39] px-4 py-5">
+                <div className="absolute inset-0 opacity-30" style={{ background: "linear-gradient(135deg, rgba(255,255,255,0.08), rgba(255,255,255,0))" }} />
+                <div className="absolute left-1/2 top-1/2 h-28 w-28 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#f59a6b] opacity-90" />
+                <div className="absolute left-1/2 top-1/2 h-16 w-16 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#2c4d5a] opacity-90" />
+                <div className="relative h-16 w-full">
+                  <div className="absolute inset-x-0 bottom-0 h-8 rounded-t-[18px] bg-[#2d6678] opacity-90" />
+                  <div className="absolute inset-x-0 bottom-0 h-8" style={{ background: "linear-gradient(180deg, transparent 0%, rgba(17,24,39,0.7) 100%)" }} />
+                  <div className="absolute inset-x-0 bottom-0 h-7" style={{ backgroundImage: "radial-gradient(circle at 12px 10px, rgba(17,24,39,0.7) 0 10px, transparent 11px)" }} />
+                </div>
+              </div>
             </div>
-            <a
-              href={featuredPost.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm text-primary hover:underline flex items-center gap-1 font-heading"
-            >
-              View Post <ExternalLink size={13} />
-            </a>
-          </div>
-
-          <p className="text-sm text-muted-foreground leading-relaxed mb-4">{featuredPost.description}</p>
-
-          <div className="flex flex-wrap gap-2">
-            <span className="text-xs px-3 py-1.5 rounded-full bg-primary/10 text-primary font-heading">
-              {featuredPost.tag}
-            </span>
-            {featuredPost.tags.map((tag) => (
-              <span key={tag} className="text-xs px-3 py-1.5 rounded-full bg-secondary text-secondary-foreground">
-                {tag}
-              </span>
-            ))}
           </div>
         </motion.div>
       </div>
